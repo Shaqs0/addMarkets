@@ -12,6 +12,11 @@ export default {
 			'text-color': '#585858',
 			'selected-text': '#F68738',
 		},
+		screens: {
+			'max-lg': {'max': '1124px'},
+			'max-md': {'max': '930px'},
+			'min-md': {'min': '930px'}
+		},
 		extend: {
 			backgroundColor: {
 				'orange-gradient': 'linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%)',
