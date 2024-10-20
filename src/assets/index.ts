@@ -5,3 +5,5 @@ export {default as Polygon} from './polygon.svg';
 export {default as BurgerIcon} from './burger_menu.svg';
 export {default as Mail} from './mail.svg';
 export {default as CloseIcon} from './close.svg';
+export {default as SupportMailIcon} from './support_mail.svg';
+export {default as SupportCallIcon} from './support_call.svg';
