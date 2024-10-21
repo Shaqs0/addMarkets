@@ -1,5 +1,5 @@
 import { Outlet, useLocation } from 'react-router-dom';
-import { BurgerIcon, CloseIcon, Logo, Mail, MobileNameLogo, NameLogo, Polygon, SupportCallIcon, SupportMailIcon } from '../assets';
+import { BurgerIcon, CloseIcon, Logo, Mail, MobileNameLogo, NameLogo, NameLogoFooter, Polygon, SupportCallIcon, SupportMailIcon, Wave} from '../assets';
 import { useState } from 'react';
 
 export function Layout() {
@@ -181,15 +181,26 @@ export function Layout() {
 						</div>
 					</div>
 				)}
-
-				<div>
-					<Outlet />
-				</div>
 			</div>
+			<section>
+				<Outlet />
+			</section>
 
-			<footer>
-				<div>FOOTER</div>
+			<footer className='min-h-screen max-w-full relative'>
+				<div className='absolute bottom-0 w-full'>
+					<img src={Wave} className='w-full h-auto' alt="Wave" />
+					<div className='flex bg-[#2F6192] h-[66px] justify-around items-center'>
+						<img src={NameLogoFooter} />
+						<div className='flex flex-col text-[#FFF] font-montserrat text-[11px] font-medium items-end'>
+							<p>© 2021 Addmarkets group</p>
+							<p>Designed by: @iwon.design</p>
+						</div>
+					</div>
+				</div>
 			</footer>
+
+
+			
 		</div>
 	);
 }
