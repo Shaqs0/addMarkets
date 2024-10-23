@@ -1,4 +1,4 @@
-import { Outlet, useLocation } from 'react-router-dom';
+import { Link, Outlet, useLocation } from 'react-router-dom';
 import { BurgerIcon, CloseIcon, Logo, Mail, MobileNameLogo, NameLogo, NameLogoFooter, Polygon, SecondWave, SupportCallIcon, SupportMailIcon, ThirdWave, Wave} from '../assets';
 import { useState } from 'react';
 
@@ -70,7 +70,7 @@ export function Layout() {
 						<div className='flex gap-[32px] items-center max-md:hidden'>
 							<div className='flex'>
 								<ul className="flex gap-[32px] font-montserrat text-sm font-medium max-lg:gap-4">
-									<li><a href="/" className={`select-none ${isActive('/')}`}>Маркетплейсы</a></li>
+									<li><Link to={'/'} className={`select-none ${isActive('/')}`}>Маркетплейсы</Link></li>
 									<li 
 										className='relative flex gap-2 items-center cursor-pointer select-none'
 										onClick={() => handleDropdownToggle('content')}
@@ -84,7 +84,7 @@ export function Layout() {
 										{activeDropdown === 'content' && (
 											<div className="absolute bg-[white] top-full mt-2 bg-white shadow-lg rounded-lg p-4 w-[323px] h-[281px]">
 												<ul className='flex text-text-color flex-col mt-3 gap-1 font-montserrat text-sm font-medium'>
-													<li><a href="photo" className={`select-none ${isActive('/photo')}`}>Фото 360</a></li>
+													<li><Link to={'photo'} className={`select-none ${isActive('/photo')}`}>Фото 360</Link></li>
 													<li><a href="#">Фото на невидимом манекене</a></li>
 													<li><a href="#">Предметная фотосъёмка</a></li>
 													<li><a href="#">Фото раскладки товара</a></li>

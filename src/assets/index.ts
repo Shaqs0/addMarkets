@@ -15,3 +15,4 @@ export {default as SecondWave} from './footer/second-wave.svg';
 export {default as ThirdWave} from './footer/third-wave.svg';
 export {default as Photo360} from './PhotoPage/Group.png';
 export {default as ListPolygon} from './PhotoPage/text-polygon.svg';
+export {default as OrangePoints} from './PhotoPage/orange_points.svg';
