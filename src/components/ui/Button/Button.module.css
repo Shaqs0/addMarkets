@@ -16,4 +16,5 @@
     font-weight: 550;
     line-height: normal;
     letter-spacing: 3.68px;
+    text-wrap: nowrap;
 }

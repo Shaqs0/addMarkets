@@ -82,9 +82,9 @@ export function Layout() {
 											className={`transition-transform duration-300 ease-in-out ${activeDropdown === 'content' ? 'rotate-180' : ''}`}
 										/>
 										{activeDropdown === 'content' && (
-											<div className="absolute top-full mt-2 bg-white shadow-lg rounded-lg p-4 w-[323px] h-[281px]">
+											<div className="absolute bg-[white] top-full mt-2 bg-white shadow-lg rounded-lg p-4 w-[323px] h-[281px]">
 												<ul className='flex text-text-color flex-col mt-3 gap-1 font-montserrat text-sm font-medium'>
-													<li><a href="Photo">Фото 360</a></li>
+													<li><a href="photo" className={`select-none ${isActive('/photo')}`}>Фото 360</a></li>
 													<li><a href="#">Фото на невидимом манекене</a></li>
 													<li><a href="#">Предметная фотосъёмка</a></li>
 													<li><a href="#">Фото раскладки товара</a></li>

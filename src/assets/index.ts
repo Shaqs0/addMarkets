@@ -13,3 +13,5 @@ export {default as Wave} from './footer/Vector.svg';
 export {default as NameLogoFooter} from './footer/name_logo_footer.svg';
 export {default as SecondWave} from './footer/second-wave.svg';
 export {default as ThirdWave} from './footer/third-wave.svg';
+export {default as Photo360} from './PhotoPage/Group.png';
+export {default as ListPolygon} from './PhotoPage/text-polygon.svg';
