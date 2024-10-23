@@ -1,0 +1,19 @@
+.leave_req {
+    display: flex;
+    width: 366px;
+    height: 92px;
+    padding: 36px 74px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 25px;
+    background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
+
+    color: #FFF;
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+    letter-spacing: 3.68px;
+}

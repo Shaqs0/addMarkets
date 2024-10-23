@@ -11,4 +11,5 @@ export {default as InstagramIcon} from './footer/instagram.svg';
 export {default as TelegramIcon} from './footer/telegram.svg';
 export {default as Wave} from './footer/Vector.svg';
 export {default as NameLogoFooter} from './footer/name_logo_footer.svg';
+export {default as SecondWave} from './footer/second-wave.svg';
 export {default as ThirdWave} from './footer/third-wave.svg';

@@ -1,5 +1,5 @@
 import { Outlet, useLocation } from 'react-router-dom';
-import { BurgerIcon, CloseIcon, Logo, Mail, MobileNameLogo, NameLogo, NameLogoFooter, Polygon, SupportCallIcon, SupportMailIcon, Wave} from '../assets';
+import { BurgerIcon, CloseIcon, Logo, Mail, MobileNameLogo, NameLogo, NameLogoFooter, Polygon, SecondWave, SupportCallIcon, SupportMailIcon, ThirdWave, Wave} from '../assets';
 import { useState } from 'react';
 
 export function Layout() {
@@ -25,7 +25,7 @@ export function Layout() {
 
 	return (
 		<div>
-			<header className='fixed top-0 left-0 w-full z-10 bg-white'>
+			<header className='fixed top-0 left-0 w-full z-10 bg-[white]'>
 				<div className='flex justify-center items-center mt-10 max-lg:mt-8'>
 					<div className='flex w-[1204px] justify-around items-center mb-12 max-lg:w-[1027px] max-md:w-[100wh] max-md:justify-around'>
 						<div className="min-md:hidden">
@@ -185,13 +185,18 @@ export function Layout() {
 			<section>
 				<Outlet />
 			</section>
-
-			<footer className='min-h-screen max-w-full relative'>
+			<footer className='relative min-h-screen max-w-full'>
 				<div className='absolute bottom-0 w-full'>
-					<img src={Wave} className='w-full h-auto' alt="Wave" />
-					<div className='flex bg-[#2F6192] h-[66px] justify-around items-center'>
-						<img src={NameLogoFooter} />
-						<div className='flex flex-col text-[#FFF] font-montserrat text-[11px] font-medium items-end'>
+
+					<img src={ThirdWave} className='absolute w-full bottom-[160px] md:bottom-[140px] sm:bottom-[120px] left-0 z-10' alt="Third Wave" />
+
+					<img src={SecondWave} className='absolute w-full bottom-[140px] md:bottom-[120px] sm:bottom-[100px] left-0 z-20' alt="Second Wave" />
+
+					<img src={Wave} className='absolute w-full bottom-0 left-0 z-30' alt="Top Wave" />
+
+					<div className='relative bg-[#2F6192] h-[66px] flex justify-around items-center z-40'>
+						<img src={NameLogoFooter} alt="Footer Logo" />
+						<div className='flex text-[white] flex-col text-white font-montserrat text-xs font-medium items-end'>
 							<p>© 2021 Addmarkets group</p>
 							<p>Designed by: @iwon.design</p>
 						</div>
@@ -200,7 +205,6 @@ export function Layout() {
 			</footer>
 
 
-			
 		</div>
 	);
 }
